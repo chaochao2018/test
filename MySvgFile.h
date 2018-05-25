@@ -16,7 +16,7 @@
 //using namespace std;
 //github add new information
 
-//
+//??????!!!!!!
 //struct mypoint2f{
 //	double x;
 //	double y;
@@ -69,8 +69,8 @@ public:
 	//show the graph 
 	void testShowDiffvec();
 
-	//²âÊÔPCA
-	void TestPCA();   //PCA + 3´Î BezierÇúÏß
+	//æµ‹è¯•PCA
+	void TestPCA();   //PCA + 3æ¬¡ Bezieræ›²çº¿
 	//vector<mypoint2f> ordered_plist;
 	void LaplacianEigenmap();
 	//average curve
@@ -78,7 +78,7 @@ public:
 	mypoint2f algorithm_one(vector<vector<mypoint2f>> normal_list, vector<vector<mypoint2f>> line_list, mypoint2f apoint,vector<int> &start_GRP_index,mypoint2f& N_newline);
 	vector<int> computeGRP(mypoint2f point, vector<int> startindex, vector<vector<mypoint2f>> line_list);
 	mypoint2f snap(vector<vector<mypoint2f>> normal_list, vector<vector<mypoint2f>> line_list, mypoint2f p, vector<int>& grp_vec, mypoint2f& normal_p);
-	//²âÊÔ·Ö¶ÎBeziercurvefitting
+	//æµ‹è¯•åˆ†æ®µBeziercurvefitting
 	void piecewiseBezieFitting();
 	void writefile();
 
@@ -136,7 +136,7 @@ private:
 	bool CBandPLIntersect(cubicBezier Cbcur, vector<mypoint2f> polyline, vector<double> &split_t1, vector<mypoint2f> &split_p);
 	bool QBandPLIntersect(quaBezier qbcur, vector<mypoint2f> polyline, vector<double> &split_t1, vector<mypoint2f> &split_p);
 	bool twoPolyIntersect(vector<mypoint2f> p1, vector<mypoint2f> p2, vector<mypoint2f> &split_p1, vector<mypoint2f> &split_p2);
-	//²¢ĞĞµÄ¼ÆËãÏà½»
+	//å¹¶è¡Œçš„è®¡ç®—ç›¸äº¤
 	bool twoCubicBzrIntersect_para(int para_i, cubicBezier cubBcur1, cubicBezier cubBcur2, vector<double> &split_t1, vector<double> &split_t2);
 
 	//void splitACurve(DiffCurve curve, double split_t, mypoint2f split_p);
@@ -158,22 +158,22 @@ private:
 	vector<pair<string, vector<double>>> transform_vec;//map<string, vector<double>> transform_vec;
 
 public:
-	vector<cubicBezier> cubicBezier_vec_origin;//ÕâÈı¸öÊÇ´ÓsvgÎÄ¼şÖĞ½âÎö³öÀ´µÄ ×î³õµÄÇúÏß¡£¿ÉÄÜ»áÔÚÁíÒ»¸öÎÄ¼şÖĞÓÃµ½£¬publicÀàĞÍ
+	vector<cubicBezier> cubicBezier_vec_origin;//è¿™ä¸‰ä¸ªæ˜¯ä»svgæ–‡ä»¶ä¸­è§£æå‡ºæ¥çš„ æœ€åˆçš„æ›²çº¿ã€‚å¯èƒ½ä¼šåœ¨å¦ä¸€ä¸ªæ–‡ä»¶ä¸­ç”¨åˆ°ï¼Œpublicç±»å‹
 	vector<quaBezier> quadraticBezier_vec_origin;
 	vector<PolyLine> polyline_vec_origin;
 
-	vector<PolyLine> added_polyline;//Ïà½»ÇúÏß·Ö¶Î£¬·Ö¶ÎºóµÄÕÛÏß´æ´¢ÔÚÕâ¸ö±äÁ¿ÖĞ
+	vector<PolyLine> added_polyline;//ç›¸äº¤æ›²çº¿åˆ†æ®µï¼Œåˆ†æ®µåçš„æŠ˜çº¿å­˜å‚¨åœ¨è¿™ä¸ªå˜é‡ä¸­
 
-	vector<cubicBezier> cubicBezier_vec;//ÕâÈı¸öÊÇ½«Ïà½»µÄÇúÏß·Ö¶ÎºóµÄ´æ´¢²»Í¬ÇúÏßµÄ±äÁ¿£¬¼´É¾³ıÁËÒÑ¾­·Ö¶ÎµÄ±´Èû¶ûÇúÏß£¬ÔöÌíÁËĞÂµÄÕÛÏß
-	vector<quaBezier> quadraticBezier_vec;//ÒÔºó»ù±¾ÉÏ¶¼ÊÇÊ¹ÓÃÕâÈı¸ö±äÁ¿½øĞĞ²Ù×÷¡£ÈôÏëÕÒµ½±»·Ö¸îÒÔÇ°µÄÔ­Ê¼ÏßÌõ ÓÃÉÏÃæµÄxxx_origin
+	vector<cubicBezier> cubicBezier_vec;//è¿™ä¸‰ä¸ªæ˜¯å°†ç›¸äº¤çš„æ›²çº¿åˆ†æ®µåçš„å­˜å‚¨ä¸åŒæ›²çº¿çš„å˜é‡ï¼Œå³åˆ é™¤äº†å·²ç»åˆ†æ®µçš„è´å¡å°”æ›²çº¿ï¼Œå¢æ·»äº†æ–°çš„æŠ˜çº¿
+	vector<quaBezier> quadraticBezier_vec;//ä»¥ååŸºæœ¬ä¸Šéƒ½æ˜¯ä½¿ç”¨è¿™ä¸‰ä¸ªå˜é‡è¿›è¡Œæ“ä½œã€‚è‹¥æƒ³æ‰¾åˆ°è¢«åˆ†å‰²ä»¥å‰çš„åŸå§‹çº¿æ¡ ç”¨ä¸Šé¢çš„xxx_origin
 	vector<PolyLine> polyline_vec;
 
-	vector<vector< mypoint2f>> polygon_vec;//ÕâĞ©±äÁ¿¿ÉÄÜÓÃ²»µ½
+	vector<vector< mypoint2f>> polygon_vec;//è¿™äº›å˜é‡å¯èƒ½ç”¨ä¸åˆ°
 	vector<mycircle> circle_vec;
 	vector<myrect> rect_vec;
 
-	vector<PolyLine> polyline_extend;// ²âÊÔÓÃ£¬
-	vector<cubicBezier> piecewise_Bezier;  //²âÊÔÓÃ
+	vector<PolyLine> polyline_extend;// æµ‹è¯•ç”¨ï¼Œ
+	vector<cubicBezier> piecewise_Bezier;  //æµ‹è¯•ç”¨
 
 //about opengl 
 public:
