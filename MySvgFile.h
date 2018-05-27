@@ -12,11 +12,10 @@
 #include<GL\glut.h>
 #include"GeomtryHeader.h"
 //#include <GL\freeglut.h>
-
 //using namespace std;
-//github add new information
 
-//??????!!!!!!
+//I add a second sentence
+
 //struct mypoint2f{
 //	double x;
 //	double y;
