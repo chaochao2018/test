@@ -2,7 +2,7 @@
 //#include<stdlib.h>
 //#include"MySvgFile.h"
 #include"MyGraph.h"
-
+//I add a sentence
 
 string FILENAME = "grandpa";
 string FILEPATH = "F:/sketch_input/";
@@ -51,7 +51,7 @@ string OUTPUT_PATH = "E:/svgfile/p+l_equal/";
 #include <igl/opengl/glfw/Viewer.h>
 void main()
 {
-	////function£º»­³ö±»·Ö¸îµÄÍ¼
+	////functionï¼šç”»å‡ºè¢«åˆ†å‰²çš„å›¾
 	//string combine_name;
 	//combine_name.append(FILEPATH);
 	//combine_name.append(FILENAME);
@@ -64,7 +64,7 @@ void main()
 	//afile.getGraphPrimitive(&file_width, &file_height, &file_view, file_view_str);
 	//afile.getCrossCurve();
 	//afile.testShowDiffvec();
-	////function£º²é¿´PCA + Èı´Î±´Èû¶ûÇúÏßÄâºÏ ½á¹û
+	////functionï¼šæŸ¥çœ‹PCA + ä¸‰æ¬¡è´å¡å°”æ›²çº¿æ‹Ÿåˆ ç»“æœ
 	//string combine_name;
 	//combine_name.append(FILEPATH);
 	//combine_name.append(FILENAME);
@@ -77,16 +77,16 @@ void main()
 	////afile.getCrossCurve();
 	//afile.piecewiseBezieFitting();  //afile.TestPCA();  //afile.LaplacianEigenmap();  //   afile.TestAverageCurve(); //
 	//afile.writefile();
-	//afile.testShowDiffvec();//×¢ÒâÈ¥ĞŞ¸Ä mydisplay()£¬ÓÃ..._origin 
+	//afile.testShowDiffvec();//æ³¨æ„å»ä¿®æ”¹ mydisplay()ï¼Œç”¨..._origin 
 
 ////---------------------------------------------//
 
 
 	//tbb::parallel_for(0, 10, [](int num) {cout << num << ": Hello TBB!" << endl; });
-	////´´½¨ÎÄ¼şÃûÁĞ±íÎÄ¼ş£¬Èô´æÔÚÔòÇå¿ÕÎÄ¼ş
+	////åˆ›å»ºæ–‡ä»¶ååˆ—è¡¨æ–‡ä»¶ï¼Œè‹¥å­˜åœ¨åˆ™æ¸…ç©ºæ–‡ä»¶
 	//fstream file_list("file_list.txt", std::ios::out);
 	//file_list.close();
-	////Ğ´ÈëÎÄ¼şÃûÁĞ±íµ½file_list.txt
+	////å†™å…¥æ–‡ä»¶ååˆ—è¡¨åˆ°file_list.txt
 	//system("dir /a /b >> file_list.txt");
 
 
@@ -124,23 +124,23 @@ void main()
 	//  //agraph.deleUndesirablePatch();
 	////agraph.jointCurveTPatch_subgraph();
 
-	//agraph.getNeiborLines(17,16, 50,20,0.1);// 20cmÒÔÄÚ  25.85¶ÈÒÔÏÂ
+	//agraph.getNeiborLines(17,16, 50,20,0.1);// 20cmä»¥å†…  25.85åº¦ä»¥ä¸‹
 	//agraph.Erosion_test(); 
 	//agraph.localProcess();
 	//agraph.patchSimilarity();
 
-	/*0.×îÒ»¿ªÊ¼Ã»ÓÃheapµÄ·½·¨*/
+	/*0.æœ€ä¸€å¼€å§‹æ²¡ç”¨heapçš„æ–¹æ³•*/
 	//agraph.localProcess_two(64);
-	/*1.Ê¹ÓÃheap ¡£weight£º°´sum£¨3ft£©´ÓĞ¡µ½´óÅÅĞò£¬ºÏ²¢£ºÓëÓ°Ïì×îĞ¡µÄÄÇ¸öpatchºÏ²¢*/
-		/*²ÎÊı½âÊÍ£º×îºóÖ»Ê£15%¸öpatch, ÏàËÆ¶ÈĞ¡ÓÚ2.5µÄ²Å¿ÉÒÔºÏ²¢£¬¼ÆËãFDÊ±fixed pointnumber=64,×îºó²ÎÊı1Ã»ÓÃ¡£ //º¯Êı·µ»ØËùÓĞpatchµÄwidthµÄÆ½¾ùÖµ£¬×÷ÎªÏßµÄ´¦ÀíµÄ²ÎÊı¡£*/
+	/*1.ä½¿ç”¨heap ã€‚weightï¼šæŒ‰sumï¼ˆ3ftï¼‰ä»å°åˆ°å¤§æ’åºï¼Œåˆå¹¶ï¼šä¸å½±å“æœ€å°çš„é‚£ä¸ªpatchåˆå¹¶*/
+		/*å‚æ•°è§£é‡Šï¼šæœ€ååªå‰©15%ä¸ªpatch, ç›¸ä¼¼åº¦å°äº2.5çš„æ‰å¯ä»¥åˆå¹¶ï¼Œè®¡ç®—FDæ—¶fixed pointnumber=64,æœ€åå‚æ•°1æ²¡ç”¨ã€‚ //å‡½æ•°è¿”å›æ‰€æœ‰patchçš„widthçš„å¹³å‡å€¼ï¼Œä½œä¸ºçº¿çš„å¤„ç†çš„å‚æ•°ã€‚*/
 	//double aver_w = agraph.localProcess_heap(15, 2.5, 64, 1);	
-	/*2.Ê¹ÓÃheap ¡£weight£ºpatchÓëneighborºÏ²¢ºóÓ°Ïì×îĞ¡µÄsimilarity distance×÷ÎªÈ¨Öµ£¬ºÏ²¢£ºÓëÓ°Ïì×îĞ¡µÄÄÇ¸öpatchºÏ²¢*/
-		/*²ÎÊı½âÊÍ£º×îºóÖ»Ê£20%¸öpatch, ÏàËÆ¶ÈĞ¡ÓÚ0.06µÄ²Å¿ÉÒÔºÏ²¢£¬¼ÆËãFDÊ±fixed pointnumber=128,×îºó²ÎÊı1Ã»ÓÃ¡£//º¯Êı·µ»ØËùÓĞpatchµÄwidthµÄÆ½¾ùÖµ£¬×÷ÎªÏßµÄ´¦ÀíµÄ²ÎÊı¡£*/
+	/*2.ä½¿ç”¨heap ã€‚weightï¼špatchä¸neighboråˆå¹¶åå½±å“æœ€å°çš„similarity distanceä½œä¸ºæƒå€¼ï¼Œåˆå¹¶ï¼šä¸å½±å“æœ€å°çš„é‚£ä¸ªpatchåˆå¹¶*/
+		/*å‚æ•°è§£é‡Šï¼šæœ€ååªå‰©20%ä¸ªpatch, ç›¸ä¼¼åº¦å°äº0.06çš„æ‰å¯ä»¥åˆå¹¶ï¼Œè®¡ç®—FDæ—¶fixed pointnumber=128,æœ€åå‚æ•°1æ²¡ç”¨ã€‚//å‡½æ•°è¿”å›æ‰€æœ‰patchçš„widthçš„å¹³å‡å€¼ï¼Œä½œä¸ºçº¿çš„å¤„ç†çš„å‚æ•°ã€‚*/
 	//double aver_w = agraph.similarityRange(20, 0.06, 128, 1);
-	/*(É¾)3.Ê¹ÓÃheap ¡£weight£ºpatch FDÓëneighbor FDµÄ²î£¨Ñ¡×îĞ¡µÄ£©£¬ºÏ²¢£º²î×îĞ¡µÄµÄÄÇ¸öpatchºÏ²¢*/
-		/*²ÎÊı½âÊÍ£º×îºóÊ£100¸öpatch, ÏàËÆ¶ÈĞ¡ÓÚ11µÄ²Å¿ÉÒÔºÏ²¢£¬¼ÆËãFDÊ±fixed pointnumber=128,×îºó²ÎÊı1Ã»ÓÃ¡£*/
+	/*(åˆ )3.ä½¿ç”¨heap ã€‚weightï¼špatch FDä¸neighbor FDçš„å·®ï¼ˆé€‰æœ€å°çš„ï¼‰ï¼Œåˆå¹¶ï¼šå·®æœ€å°çš„çš„é‚£ä¸ªpatchåˆå¹¶*/
+		/*å‚æ•°è§£é‡Šï¼šæœ€åå‰©100ä¸ªpatch, ç›¸ä¼¼åº¦å°äº11çš„æ‰å¯ä»¥åˆå¹¶ï¼Œè®¡ç®—FDæ—¶fixed pointnumber=128,æœ€åå‚æ•°1æ²¡ç”¨ã€‚*/
 	//agraph.shapeSimilarityRange(100, 11, 128, 1);	
-	/*ÏßµÄ´¦Àí*/
+	/*çº¿çš„å¤„ç†*/
 	//agraph.attachLineProcess(aver_w, 20);
 
 	double aver_w=agraph.ConstructMixedTopology(0.01);
@@ -153,7 +153,7 @@ void main()
 	agraph.globalSmoothing();
 	agraph.writesmoothFile(FILENAME, OUTPUT_PATH, file_width, file_height, file_view, file_view_str);
 	agraph.clearStructure();
-	//ÖØ¸´µÚ¶ş±é
+	//é‡å¤ç¬¬äºŒé
 	agraph.getCrossCurve();
 	agraph.constuctEdgeGraph(file_width, file_height, file_view_str);
 	agraph.constructPointGraph();
@@ -177,7 +177,7 @@ void main()
 	agraph.writeSVGFile(FILENAME, OUTPUT_PATH, file_width, file_height,file_view,file_view_str);
 	agraph.testShowGraph();
 	//---------------------------------------------//
-	/*MyGraph agraph(fname); //Ã»ÓĞ·Ö¸îµÄ
+	/*MyGraph agraph(fname); //æ²¡æœ‰åˆ†å‰²çš„
 	agraph.getGraphPrimitive();
 	agraph.findPointAndEdge();
 	agraph.createGraph();
@@ -185,7 +185,7 @@ void main()
 	agraph.findPatches();
 	agraph.jointCurveTPatch();
 	agraph.testShowGraph();*/
-	////////////////////////////////////////////////////Åú´¦Àí£¿£¿£¿£¿
+	////////////////////////////////////////////////////æ‰¹å¤„ç†ï¼Ÿï¼Ÿï¼Ÿï¼Ÿ
 
 	//vector<string> nnn;
 	//nnn.push_back("girl");
